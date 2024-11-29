@@ -114,7 +114,7 @@ function validationInputs( element , msgId) {
     var text = element.value;
 
     var regex = {
-        siteName : /^[a-zA-Z]{3,20}$/,
+        siteName : /^[a-zA-Z\s]{3,20}$/,
         siteUrl : /^www\.[a-z]{3,30}\.(com|net|io)$/
     }
 
