@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <!-- Tab Icon -->
+    <link rel="icon" href="./warning.png">
+    <!-- fontAwesome Link -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- bootstrap Link -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- CSS file Link -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Font Embed Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <main>
+        <div class="container">
+
+            <div class="text-center py-5">
+                <h1>Bookmarker</h1>
+            </div>
+    
+            <div class="markBody">
+                
+                <h2 class="text-center">
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+    
+    
+                <div class="bodyInput">
+                    <label for="siteName"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+                    <input oninput="validationInputs( this , 'msgName')"  type="text" class="form-control mt-2 mb-4" id="siteName" placeholder="Bookmark Name" />
+                    <p class="alert alert-danger d-none" id="msgName">
+                        The minimum number of characters must be 3 characters and the maximum number must be 20 characters,
+                    </p>
+
+
+                    <label for="siteUrl"><i class="fa-solid fa-link"></i> Site URL</label>
+                    <input oninput="validationInputs( this , 'msgUrl')" type="text" class="form-control mt-2 mb-4" id="siteUrl" placeholder="Website URL" />
+                    <p class="alert alert-danger d-none" id="msgUrl">
+                        The link must start with www. and 3 toal 30 lowercase letters, then .com, .net, or .io ,
+                    </p>
+
+                </div>
+
+                <div class="subBtn text-center">
+                    <button onclick="submitBtn()" type="button" class="btn px-5 mb-4">Submit</button>
+                </div>
+                
+            </div>
+
+            <div class="markTabel">
+
+                <table class=" table text-center bg-light mt-4">
+
+                    <thead>
+                        <tr>
+                            <th>index</th>
+                            <th>Website Name</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tableData">
+                        
+                    </tbody>
+
+<!-- 
+    <tr>
+        <th>1</th>
+        <th>youtube</th>
+        <th>
+        <button type="button" class="visitBtn btn btn-danger"><i class="fa-solid fa-eye"></i>  Visit</button>
+        </th>
+        <th>
+        <button type="button" class="delBtn btn btn-danger"><i class="fa-solid fa-trash-can"></i>  Delete</button>
+        </th>
+    </tr>                
+-->
+
+
+
+
+
+
+
+
+
+
+
+                </table>
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
